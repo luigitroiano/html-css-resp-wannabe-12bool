@@ -24,3 +24,129 @@ h3, p{
 .bg_lightgrey{
   background-color: #f9f9f9;
 }
+
+/* media query medium screen*/
+@media all and (min-width: 769px) and (max-width: 1200px){
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    margin: 0;
+    font-size: 18px;
+  }
+  .row{
+    margin: 0 auto;
+    width: 100%;
+  }
+  #lessons>.row,
+  #steps>.row,
+  #why>.row{
+    padding: 15px 0;
+  }
+
+  #lessons>.row,
+  #why>.row{
+    background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    color: white;
+  }
+  #steps{
+    background-color: white;
+  }
+
+  .col-md-6{
+    padding: 0 10px;
+  }
+  .col-md-4{
+    margin-top: 30px;
+    padding: 0 2.5%;
+  }
+  .col-md-12{
+    padding: 0 10px;
+    margin-top: 30px;
+  }
+
+  h1{
+    font-size: 38px;
+  }
+
+  img{
+    height: 150px;
+  }
+  #lessons .row img{
+    margin-top: 30px;
+    background-image: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  }
+  #why .row img{
+    background-image: radial-gradient(circle, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  }
+
+  h3{
+    margin: 0;
+    font-size: 24px;
+  }
+
+  hr{
+    display: none;
+  }
+}
+/* /media query medium screen*/
+
+
+/* media query small screen*/
+@media screen and (max-width:768px){
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    margin: 0;
+    font-size: 16px;
+  }
+  .row{
+    margin: 0 auto;
+    width: 100%;
+
+  }
+  #lessons>.row,
+  #why>.row{
+    background-color: #F2F2CD;
+  }
+  #steps{
+    background-color: white;
+  }
+
+  #lessons>.row,
+  #steps>.row,
+  #why>.row{
+    padding: 15px 0;
+  }
+
+  .col-sm-12{
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 2.5%;
+  }
+
+  h1{
+    font-size: 36px;
+    margin: 0;
+  }
+
+  img{
+    height: 150px;
+  }
+
+  h3{
+    margin: 0;
+    font-size: 22px;
+  }
+
+  hr{
+    border-style: solid;
+    margin: 0;
+  }
+}
+/* /media query small screen */
